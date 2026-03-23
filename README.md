@@ -34,6 +34,9 @@ This started as a student project (years ago) by the author, and many configurat
 pipeline are now outdated. However, the activation sparsity direction—especially column-wise and
 norm-induced sparsity—still looks promising.
 
+We also sincerely thank **Chen Shixiang** and **Cheng Yifei** for their implementation contribution
+to the JointSparse component used in this project.
+
 ## Scope of This Release
 
 - Keep only core algorithm code for static inspection.
@@ -122,3 +125,32 @@ year={2022}
 ```
 
 BackRazor repository: <https://github.com/VITA-Group/BackRazor_Neurips22>
+
+### JointSparse (algorithm implementation used here)
+
+The JointSparse algorithm referenced in this repository is from:
+
+- Rui Liu and Barzan Mozafari, *Communication-efficient Distributed Learning for Large Batch Optimization*,
+  ICML 2022 / PMLR 162.
+- Paper page: <https://proceedings.mlr.press/v162/liu22n.html>
+
+Implementation contribution in this codebase:
+
+- **Chen Shixiang**
+- **Cheng Yifei**
+
+If you use the JointSparse part in this codebase, please also cite the original paper:
+
+```bibtex
+@InProceedings{pmlr-v162-liu22n,
+  title = {Communication-efficient Distributed Learning for Large Batch Optimization},
+  author = {Liu, Rui and Mozafari, Barzan},
+  booktitle = {Proceedings of the 39th International Conference on Machine Learning},
+  pages = {13925--13946},
+  year = {2022},
+  volume = {162},
+  series = {Proceedings of Machine Learning Research},
+  publisher = {PMLR},
+  url = {https://proceedings.mlr.press/v162/liu22n.html}
+}
+```
